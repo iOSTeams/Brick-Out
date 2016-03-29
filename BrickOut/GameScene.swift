@@ -11,43 +11,9 @@ import AVFoundation
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
+    var point : Int = Int()
     
     var fingerIsOnPaddle = false
-    
-//    override func didMoveToView(view: SKView) {
-//        /* Setup your scene here */
-//        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-//        myLabel.text = "Hello, World!"
-//        myLabel.fontSize = 45
-//        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
-//        
-//        self.addChild(myLabel)
-//    }
-//    
-//    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-//       /* Called when a touch begins */
-//        
-//        for touch in touches {
-//            let location = touch.locationInNode(self)
-//            
-//            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-//            
-//            sprite.xScale = 0.5
-//            sprite.yScale = 0.5
-//            sprite.position = location
-//            
-//            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-//            
-//            sprite.runAction(SKAction.repeatActionForever(action))
-//            
-//            self.addChild(sprite)
-//        }
-//    }
-//   
-//    override func update(currentTime: CFTimeInterval) {
-//        /* Called before each frame is rendered */
-//    }
-    
     let ballCategoryName = "ball"
     let paddleCategoryName = "paddle"
     let brickCategoryName = "brick"
@@ -117,8 +83,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         bottom.physicsBody?.categoryBitMask = bottomCategory
         ball.physicsBody?.categoryBitMask = ballCategory
         paddle.physicsBody?.categoryBitMask = paddleCategory
-        ball.physicsBody?.contactTestBitMask = bottomCategory
-        ball.physicsBody?.contactTestBitMask = brickCategory
+        ball.physicsBody?.contactTestBitMask = bottomCategory | brickCategory
+        
         
         
         //Create bricks
@@ -220,14 +186,38 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if firstBody.categoryBitMask == ballCategory && secondBody.categoryBitMask == bottomCategory {
             print ("You lost")
+            let lossScene = GameOverScene(size: self.size, playerWon: false)
+            self.view?.presentScene(lossScene)
+            
         }
         
         if firstBody.categoryBitMask == ballCategory && secondBody.categoryBitMask == brickCategory {
             secondBody.node?.removeFromParent()
             //Doesnt work if you turn dynamic off
-            print ("Destroyed")
+            
+            if isGameWon() {
+                let winScene = GameOverScene(size: self.size, playerWon: true)
+                self.view?.presentScene(winScene)
+            }
         }
         
+    }
+    
+    func isGameWon() -> Bool {
+        var numberOfBricks = 0
+        
+        for nodeObject in self.children{
+            let node = nodeObject as SKNode
+            if node.name == brickCategoryName {
+                numberOfBricks += 1
+                point += 1
+            }
+        }
+        return numberOfBricks <= 0
+    }
+    
+    func getPoint() -> Int {
+        return point
     }
     
     required init?(coder aDecoder:NSCoder) {

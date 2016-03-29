@@ -15,6 +15,7 @@
 		3146E02B1CAA3FA1006FAC9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3146E0291CAA3FA1006FAC9B /* LaunchScreen.storyboard */; };
 		3146E0331CAA4103006FAC9B /* bgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3146E0321CAA4103006FAC9B /* bgMusic.mp3 */; };
 		3146E0371CAA48CB006FAC9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3146E0361CAA48CB006FAC9B /* Images.xcassets */; };
+		319EB29C1CAB176C00B61714 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319EB29B1CAB176C00B61714 /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3146E02C1CAA3FA1006FAC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3146E0321CAA4103006FAC9B /* bgMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgMusic.mp3; sourceTree = "<group>"; };
 		3146E0361CAA48CB006FAC9B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		319EB29B1CAB176C00B61714 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				3146E01C1CAA3FA1006FAC9B /* AppDelegate.swift */,
 				3146E01E1CAA3FA1006FAC9B /* GameScene.sks */,
 				3146E0201CAA3FA1006FAC9B /* GameScene.swift */,
+				319EB29B1CAB176C00B61714 /* GameOverScene.swift */,
 				3146E0221CAA3FA1006FAC9B /* GameViewController.swift */,
 				3146E0241CAA3FA1006FAC9B /* Main.storyboard */,
 				3146E0291CAA3FA1006FAC9B /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 			files = (
 				3146E0211CAA3FA1006FAC9B /* GameScene.swift in Sources */,
 				3146E0231CAA3FA1006FAC9B /* GameViewController.swift in Sources */,
+				319EB29C1CAB176C00B61714 /* GameOverScene.swift in Sources */,
 				3146E01D1CAA3FA1006FAC9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

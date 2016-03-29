@@ -2,4 +2,84 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrickOut/GameScene.swift"
+            timestampString = "480977779.152114"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "GameScene"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrickOut.GameScene.point.getter : Swift.Int"
+                  moduleName = "BrickOut"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kingjustin/Projects/iOS/xcode/BrickOut/BrickOut/GameScene.swift"
+                  timestampString = "480977779.153823"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrickOut.GameScene.point.setter : Swift.Int"
+                  moduleName = "BrickOut"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kingjustin/Projects/iOS/xcode/BrickOut/BrickOut/GameScene.swift"
+                  timestampString = "480977779.153957"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrickOut.GameScene.init (size : __C.CGSize) -&gt; BrickOut.GameScene"
+                  moduleName = "BrickOut"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kingjustin/Projects/iOS/xcode/BrickOut/BrickOut/GameScene.swift"
+                  timestampString = "480977779.154032"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrickOut.GameScene.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;BrickOut.GameScene&gt;"
+                  moduleName = "BrickOut"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kingjustin/Projects/iOS/xcode/BrickOut/BrickOut/GameScene.swift"
+                  timestampString = "480977779.154106"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "35">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
